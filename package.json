@@ -1,11 +1,14 @@
 {
-    "name":  "nova-guards",
-    "version":  "0.1.0",
-    "private":  true,
-    "type":  "module",
-    "description":  "Runs the .claude/settings.json hooks, deny list and slash commands of the session\u0027s repository in OpenCode V2",
-    "license":  "MIT OR Apache-2.0",
-    "exports":  {
-                    ".":  "./index.ts"
-                }
+  "name": "opencode-claude-guards",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Runs the .claude/settings.json hooks, deny list and slash commands of the session's repository in OpenCode V2",
+  "license": "MIT OR Apache-2.0",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unitcraft/opencode-claude-guards.git"
+  }
 }
