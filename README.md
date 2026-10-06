@@ -38,7 +38,7 @@ git clone https://github.com/unitcraft/opencode-claude-guards D:/Sources/opencod
 
 Other OpenCode plugins of the same set (they work independently; together they are tested on one machine):
 
-- [opencode-peers](https://github.com/unitcraft/opencode-peers) — letters and tasks between OpenCode sessions on one machine, across windows and projects, addressed by `project.role`
+- [CrewHarness](https://github.com/unitcraft/crew-harness) — letters and tasks between OpenCode sessions on one machine, across windows and projects, addressed by `project.role`
 - [opencode-windows-env](https://github.com/unitcraft/opencode-windows-env) — a sane command environment on Windows and a time stamp on agent messages
 - [opencode-claude-code-provider](https://github.com/unitcraft/opencode-claude-code-provider) — OpenCode provider `claude-code` on top of the official Claude Code
 
