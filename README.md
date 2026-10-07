@@ -16,7 +16,7 @@ is read on every call, no copy is kept.
 
 Not covered (no exact OpenCode counterpart): `Write`, `Stop`, `SessionStart`, `PostToolUse`
 hooks; Claude Code subagent definitions. A failure of the plugin itself lets the command
-through (like Claude Code hooks) and is logged to `<tmp>/nova-opencode-plugins.log`.
+through (like Claude Code hooks) and is logged to `<tmp>/opencode-plugins.log`.
 
 Tabs on the [`claude-code` provider](https://github.com/unitcraft/opencode-claude-code-provider) do not need
 it: there the official Claude Code runs the repository's `.claude` settings itself, all hooks included
@@ -25,13 +25,13 @@ it: there the official Claude Code runs the repository's `.claude` settings itse
 ## Install
 
 ```sh
-git clone https://github.com/unitcraft/opencode-claude-guards D:/Sources/opencode-claude-guards
+git clone https://github.com/unitcraft/opencode-claude-guards C:/work/opencode-claude-guards
 ```
 
 `~/.config/opencode/opencode.jsonc`:
 
 ```jsonc
-"plugins": ["D:/Sources/opencode-claude-guards"]
+"plugins": ["C:/work/opencode-claude-guards"]
 ```
 
 ## Related
@@ -42,6 +42,6 @@ Other OpenCode plugins of the same set (they work independently; together they a
 - [opencode-windows-env](https://github.com/unitcraft/opencode-windows-env) — a sane command environment on Windows and a time stamp on agent messages
 - [opencode-claude-code-provider](https://github.com/unitcraft/opencode-claude-code-provider) — OpenCode provider `claude-code` on top of the official Claude Code
 
-History: moved with its commits from `nv-lang/nova-opencode-plugins` (`plugins/nova-guards`).
+History: moved with its commits from a private plugins repository of the nova project (`plugins/nova-guards`).
 
 License: MIT OR Apache-2.0 (see [LICENSE](LICENSE)).

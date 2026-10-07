@@ -21,14 +21,14 @@
 // `.opencode/` самого репозитория.
 //
 // Сбой САМОГО плагина пропускает команду (как у хуков Claude Code) и пишется в
-// журнал `<tmp>/nova-opencode-plugins.log`.
+// журнал `<tmp>/opencode-plugins.log`.
 
 import { execFileSync, spawn } from "node:child_process"
 import { appendFileSync, existsSync, readFileSync, readdirSync } from "node:fs"
 import os from "node:os"
 import path from "node:path"
 
-const LOG = path.join(os.tmpdir(), "nova-opencode-plugins.log")
+const LOG = path.join(os.tmpdir(), "opencode-plugins.log")
 const HOOK_TIMEOUT_MS = 20_000
 
 function log(line: string) {
